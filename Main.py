@@ -3,14 +3,13 @@ from typing import List
 def insertionSort(array) -> List[int]:
     for i in range(1,len(array)):
         key = array[i]
-        j = i-1
-        while j>=0 and key < array[j]:
+        j = i -1
+        while j >= 0 and key < array[j]:
             array[j+1] = array[j]
-            j -=1
+            j -= 1
         array[j+1] = key
-     return array
-
-# data = [9, 5, 1, 4, 3]
+    return array
+    
 input_data = input()
 data = []
 for item in input_data.split(', '):
